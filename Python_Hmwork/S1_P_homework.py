@@ -63,3 +63,17 @@ elif X_axis_coord < 0 and Y_axis_coord < 0:
     print("Your point is in a III quarter")
 elif X_axis_coord > 0 and Y_axis_coord < 0:
     print("Your point is in a IV quarter")
+
+# Внимание: Задание сделано группой на семинаре: загрузил после 1 семинара
+
+# Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+print ('Task 4')
+print ('Test all logic statements for: ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z')
+act = int(input('Start 1/0: '))
+if act != 1:
+    print ('The End')
+else:
+    for x in range (2):
+            for y in range (2):
+                        for z in range (2):
+                            print((not(x or y or z) == (not(x) and not(y) and not(z))))
